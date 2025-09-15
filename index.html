@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Feed Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <div class="nav-left">AppName</div>
+    <nav class="nav-center">
+      <button>Home</button>
+      <button>Chats</button>
+      <button>Marketplace</button>
+    </nav>
+    <div class="nav-right">
+      <button class="icon-btn">🔔</button>
+      <div class="profile-wrap">
+        <button id="profileBtn" class="profile-btn">
+          <img src="avatar.png" class="avatar" alt="User">
+          <span>You</span>
+        </button>
+        <div id="profileMenu" class="dropdown hidden">
+          <button>Profile</button>
+          <button>Settings</button>
+          <button>Log out</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <main class="container">
+    <!-- Feed -->
+    <section class="feed">
+      <!-- Post Card -->
+      <article class="card">
+        <div class="card-header">
+          <img src="avatar.png" class="avatar" alt="User">
+          <div>
+            <h4>John Doe</h4>
+            <p>2 hrs ago</p>
+          </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, sharing updates with friends!</p>
+        <img src="post.jpg" class="post-img" alt="Post">
+        <div class="card-actions">
+          <button class="like-btn">👍 <span class="like-count">12</span></button>
+          <button>💬 5</button>
+          <button>↗️ Share</button>
+        </div>
+      </article>
+
+      <!-- More posts... -->
+    </section>
+
+    <!-- Aside -->
+    <aside class="aside">
+      <div class="profile-card">
+        <img src="avatar.png" class="avatar big" alt="Me">
+        <h3>Your Name</h3>
+        <p>@username</p>
+        <p>Joined: 2023</p>
+      </div>
+
+      <h4>Friends</h4>
+      <ul class="friends-list">
+        <li><img src="avatar.png" class="avatar"> Friend 1</li>
+        <li><img src="avatar.png" class="avatar"> Friend 2</li>
+        <li><img src="avatar.png" class="avatar"> Friend 3</li>
+      </ul>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Developer: Your Name</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
