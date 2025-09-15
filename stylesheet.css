@@ -1,0 +1,49 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #f4f4f4; color: #333; }
+
+/* Header */
+.site-header {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 10px 20px; background: #1877f2; color: white;
+}
+.site-header button { background: none; border: none; color: white; cursor: pointer; margin: 0 5px; }
+.nav-center button:hover { text-decoration: underline; }
+
+/* Avatar */
+.avatar { width: 30px; height: 30px; border-radius: 50%; margin-right: 5px; }
+.avatar.big { width: 70px; height: 70px; margin: 10px auto; display: block; }
+
+/* Layout */
+.container { display: flex; width: 100%; padding: 20px; gap: 20px; }
+.feed { flex: 4; }
+.aside { flex: 1; background: #fff; padding: 15px; border-radius: 6px; }
+
+/* Card */
+.card { background: #fff; padding: 15px; margin-bottom: 20px; border-radius: 6px; }
+.card-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.post-img { width: 100%; border-radius: 6px; margin-top: 10px; }
+.card-actions { display: flex; gap: 15px; margin-top: 10px; }
+.card-actions button { border: none; background: none; cursor: pointer; color: #1877f2; }
+
+/* Profile dropdown */
+.profile-wrap { position: relative; display: inline-block; }
+.dropdown { position: absolute; right: 0; background: white; color: #333;
+  border: 1px solid #ccc; border-radius: 5px; padding: 5px; display: flex; flex-direction: column; }
+.dropdown.hidden { display: none; }
+.dropdown button { background: none; border: none; padding: 8px; text-align: left; cursor: pointer; }
+.dropdown button:hover { background: #eee; }
+
+/* Friends */
+.friends-list { list-style: none; margin-top: 10px; }
+.friends-list li { display: flex; align-items: center; margin: 5px 0; }
+
+/* Footer */
+footer { text-align: center; padding: 10px; background: #222; color: white; margin-top: 20px; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container { flex-direction: column; }
+  .aside { order: -1; }
+}
